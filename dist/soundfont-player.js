@@ -4,6 +4,8 @@
 var load = require('audio-loader')
 var player = require('sample-player')
 
+var parser = require('note-parser')
+
 /**
  * Load a soundfont instrument. It returns a promise that resolves to a
  * instrument object.
@@ -85,7 +87,7 @@ Soundfont.nameToUrl = nameToUrl
 if (typeof module === 'object' && module.exports) module.exports = Soundfont
 if (typeof window !== 'undefined') window.Soundfont = Soundfont
 
-},{"./legacy":2,"audio-loader":6,"sample-player":10}],2:[function(require,module,exports){
+},{"./legacy":2,"audio-loader":6,"note-parser":8,"sample-player":10}],2:[function(require,module,exports){
 'use strict'
 
 var parser = require('note-parser')
